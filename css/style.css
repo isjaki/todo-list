@@ -16,3 +16,7 @@ body {
     color: #fff;
     transition: background-color 0.5s;
 }
+
+.app__button:hover {
+    background-color: #1b39ff;
+}
