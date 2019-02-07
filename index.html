@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo list app</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style.css"></link>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id='app'>
+            <div class="app__list-container" @mousedown.prevent>
+                <span @click="toggle">{{ title }}</span>
+                <ul v-show="seen" @click="deleteTask" class="app__list">
+                    <li v-for="todo in todos" v-bind:key="todo.id">
+                        {{ todo.text }} 
+                        <button type="button" class="app__button">X</button>
+                    </li>
+                </ul>
+                <p class="app__text">{{ taskText }}</p>
+            </div>
+            <input type="text" class="app__input" :class="{error: hasError}" v-model="taskText" @keyup.enter="addTask">
+            <button type="button" class="app__button" @click="addTask">Добавить действие</button>
+            <p class="app__error">{{ errorMessage }}</p>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
