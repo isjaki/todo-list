@@ -15,13 +15,13 @@
                 <ul v-show="seen" @click="deleteTask" class="app__list">
                     <li v-for="todo in todos" v-bind:key="todo.id">
                         {{ todo.text }} 
-                        <button type="button" class="app__button">X</button>
+                        <button type="button" class="app__button delete-button">X</button>
                     </li>
                 </ul>
                 <p class="app__text">{{ taskText }}</p>
             </div>
             <input type="text" class="app__input" :class="{error: hasError}" v-model="taskText" @keyup.enter="addTask">
-            <button type="button" class="app__button" @click="addTask">Добавить действие</button>
+            <button type="button" class="app__button add-button" @click="addTask">Добавить действие</button>
             <p class="app__error">{{ errorMessage }}</p>
         </div>
         <script src="js/script.js"></script>
