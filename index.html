@@ -11,7 +11,7 @@
     <body>
         <div id='app'>
             <div class="app__list-container" @mousedown.prevent>
-                <span @click="toggle">{{ title }}</span>
+                <span @click="toggle" class="app__title">{{ title }}</span>
                 <ul v-show="seen" @click="deleteTask" class="app__list">
                     <li v-for="todo in todos" v-bind:key="todo.id">
                         {{ todo.text }} 

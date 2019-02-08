@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .error {
@@ -16,4 +17,9 @@ body {
     color: #fff;
     transition: background-color 0.5s;
     padding: 5px 10px;
+}
+
+.app__title {
+    font-size: 1.1em;
+    font-weight: bold;
 }
