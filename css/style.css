@@ -13,7 +13,6 @@ body {
     color: #fff;
     transition: background-color 0.5s;
     padding: 5px 10px;
-<<<<<<< HEAD
     cursor: pointer;
 }
 
@@ -22,7 +21,6 @@ body {
     font-weight: bold;
     color: #24470b;
     cursor: pointer;
-=======
 }
 
 .app__list {
@@ -41,5 +39,4 @@ body {
 
 .error {
     border: 2px solid red;
->>>>>>> list-style-change
 }
