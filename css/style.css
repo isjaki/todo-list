@@ -17,10 +17,12 @@ body {
     color: #fff;
     transition: background-color 0.5s;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .app__title {
     font-size: 1.1em;
     font-weight: bold;
     color: #24470b;
+    cursor: pointer;
 }
